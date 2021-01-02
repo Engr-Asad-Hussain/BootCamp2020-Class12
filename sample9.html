@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Web Animation API</title>
+    <style>
+        .container {
+            height: 100px;
+            width: 100px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <script>
+        var element = document.querySelector('.container');
+        var animation = element.animate([
+            { transform: 'translateX(0)' },
+            { transform: 'translateX(200px)' },
+            { transform: 'translate(0)' }
+        ], {
+            duration: 1000,
+            iterations: 5
+        });
+        animation.onfinish = (event)=>{
+            console.log(event);
+            console.log('finished');
+        }
+    </script>
+</body>
+</html>

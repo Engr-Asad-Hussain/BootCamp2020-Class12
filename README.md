@@ -60,3 +60,5 @@ document.addEventListener("wheel", (event)=>{
     animation.play();
 })
 ```
+- Animation.onfinish: (see sample 9)
+> The Animation interface's onfinish property (from the Web Animations API) is the event handler for the finish event. This event is sent when the animation finishes playing.
