@@ -18,19 +18,19 @@
 
 ### Few KeyFrames
 1. { transform: 'translate(xAxis, yAxis)' } :translate means inline.
-  - { transform: 'translateX(500px)' } 
-  - { transform: 'translateY(500px)' } 
-  - { transform: 'translateZ(50px)' }
+    - { transform: 'translateX(500px)' } 
+    - { transform: 'translateY(500px)' } 
+    - { transform: 'translateZ(50px)' }
 2. { transform: 'translate(200px, 200px)', backgroundColor: 'red' }
 3. { transform: 'scale(0.5)'}  : scale is the zoom effect, in percentage.
 4. { transform: color: 'red' } : color of text will be red
 5. { transform: 'rotate(90deg)' }  : rotate to 90 degrees
-  - { transform: 'rotateX(90deg)' }
-  - { transform: 'rotateY(90deg)' }
-  - { transform: 'rotateZ(90deg)' }
+    - { transform: 'rotateX(90deg)' }
+    - { transform: 'rotateY(90deg)' }
+    - { transform: 'rotateZ(90deg)' }
 6. { transform: 'skew(90deg)' }    : rotate in skew type
-  - { transform: 'skewX(90deg)' }
-  - { transform: 'skewY(90deg)' }
+    - { transform: 'skewX(90deg)' }
+    - { transform: 'skewY(90deg)' }
 7. { opacity: [0.1, 1, 0.1] }  : see sample # 05
 
 
