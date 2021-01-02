@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Web Animations API</title>
+    <style>
+        #line {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="line"></div>
+    <script>
+        var element = document.querySelector('#line');
+        element.animate([
+        { transform: 'translate(0, 0)' },
+        { transform: 'translate(400px, 0)' },
+        { transform: 'translate(400px, 400px)' },
+        { transform: 'translate(0, 400px)' },
+        { transform: 'translate(0, 0)' }
+        ], {
+            duration: 4000,
+            iterations: Infinity
+        });
+    </script>
+</body>
+</html>

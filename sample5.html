@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Web Animations API</title>
+    <style>
+        .other {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            position: absolute;
+            left: 40%;
+            top: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="other"></div>
+    <script>
+        var element = document.querySelector('.other');
+        element.animate({ 
+            opacity: [0.1, 1, 0.1],
+            backgroundColor: 'red',
+        }, {
+            duration: 4000,
+            iterations: Infinity
+        })
+    </script>
+</body>
+</html>

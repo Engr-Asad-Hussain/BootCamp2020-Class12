@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Web Animations API</title>
+    <style>
+        #warn {
+            position: absolute;
+            left: 40%;
+            top: 30%;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <div id="warn">Warning!</div>
+    <script>
+        var element = document.getElementById("warn");
+        element.animate([
+            { transform: 'scale(1)', backgroundColor: 'red', color: 'white' },
+            { transform: 'scale(0.5)', backgroundColor: 'white', color: 'red' },
+            { transform: 'scale(1)', backgroundColor: 'red', color: 'white' }
+        ], {
+            duration: 5000,
+            iterations: Infinity,
+        })
+    </script>
+</body>
+</html>

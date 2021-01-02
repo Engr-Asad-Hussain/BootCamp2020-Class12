@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Web Animation API</title>
+    <style>
+        body {
+            background-image: url('./images/bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #cloud {
+            position: absolute;
+            left: 8%;
+        }
+    </style>
+</head>
+<body>
+    <img id="cloud" src="images/cloud.gif">
+    <script>
+        var element = document.querySelector('#cloud')
+        var animation = element.animate([
+            { transform: 'translate(0, 0)' },
+            { transform: 'translate(550px, 300px) scale(2)' },
+            { transform: 'translate(0, 0) scale(1)' }
+        ], {
+            duration: 4000,
+            iterations: Infinity,
+        });
+        document.addEventListener("mousedown", ()=>{
+            animation.pause();
+        })
+        document.addEventListener("mouseup", ()=>{
+            animation.play();
+        })
+    </script>
+</body>
+</html>

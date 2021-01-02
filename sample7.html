@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>We Animation API</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+        .pulse {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="pulse"></div>
+    <script>
+        var element = document.querySelector('.pulse');
+        var animation = element.animate([
+            { transform: 'translate(0, 0)' },
+            { transform: 'translate(80px, 0)' },
+            { transform: 'translate(80px, 80px)' },
+            { transform: 'translate(0, 80px)' },
+            { transform: 'translate(0, 0)' }
+        ], {
+            duration: 3000,
+            iterations: Infinity
+        })
+        addEventListener("mouseover", (event)=>{
+            // console.log(event);
+            animation.pause();
+        });
+        document.addEventListener("click", ()=>{
+            animation.play();
+        })
+    </script>
+</body>
+</html>
